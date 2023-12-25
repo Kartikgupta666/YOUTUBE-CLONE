@@ -1,0 +1,92 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: rgb(13, 13, 13);
+    color: #fff;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: auto;
+    /* background-color: aqua; */
+    align-items: center;
+    
+}
+img {
+    position: absolute;
+    border-radius:100%;
+    height: 40px;
+    width:40px;
+}
+.logo {
+    float: right;
+    display: flex;
+    align-items: center;
+    
+}
+#ser{
+    height: 40px;
+    width: 500px;
+    border-radius:50px;
+    padding: 10px;
+    border: 1px solid grey;
+    color:#fff;
+    font-size: 18px;
+    background-color: transparent;
+    
+}
+.side{
+    float: left;
+}
+.btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 100%;
+}
+.bt {
+    position: relative;
+    height: 39px;
+    width: 60px;
+    border: 1px solid grey;
+    border-radius: 0 50px 50px 0;
+    right: 65px;
+    background-color: grey;
+    top: -2px;
+    text-align: center;
+}
+
+.na {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+}
+.na-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+}
+
+.but {
+   height: 40px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.but:hover {
+    background-color: rgba(105, 102, 102, 0.626);
+    
+}
