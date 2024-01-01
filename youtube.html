@@ -6,62 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <div class="nav">
         <nav>
             <div class="logo">
-                <button class="btn">=</button>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                <h1><a href="#" style="color: red;">logo</a>Youtube</h1>
+                <button onclick="show()" id="slider" class="btn"
+                    style="position: relative; left: -90px; font-size: 30px;">
+                    <i class="fas fa-sliders"></i></button>
+                
+                <h1><a href="#"><i class="fab fa-youtube"
+                            style="font-size: 30px; align-items:center ;color: red; "></i></a>&nbsp;Youtube</h1>
             </div>
             <div class="search">
                 <input type="search" name="" id="ser" placeholder="Search">
-                <button class="bt">voice</button>
-
-                <button class="btn">voice</button>
+                <button class="bt"><i class='fas fa-search'></i></button>
+                <button class="btn" style="position: relative; left: -50px;"><i class='fas fa-microphone'></i></button>
             </div>
             <div class="side">
-                <button class="btn">C</button>
-                <button class="btn">N</button>
+                <button class="btn"><i class='fas fa-video'></i></button>
+                <button class="btn"><i class='far fa-bell'></i></button>
                 &nbsp;
-                <img src="IMG20231028145200-removebg-preview (1).jpg" alt="">
+                <img class="account" src="IMG20231028145200-removebg-preview (1).jpg" alt="">
             </div>
         </nav>
     </div>
 
     <!-- side-nav bar -->
-    <div class="side-nav-bar">
-
-        <!-- <div class="na-1">
-
-            <button class="but">Home</button>
-            <button class="but">Shorts</button>
-            <button class="but">Subscription</button>
-            <button class="but">You</button>
-            <button class="but">Download</button>
-           
-
-        </div> -->
-
-        <div class="na">
-
-            <button class="but">Home</button>
-            <button class="but">Shorts</button>
-            <button class="but">Subscription</button>
-            <hr>
-            <button class="but">Explore</button>
-            <hr>
-            <button class="but">Settings</button>
-            <button class="but">Report History</button>
-            <button class="but">Help</button>
-            <button class="but">Send feedback</button>
-
+    <div class="side-nav-bar" id="snv">
+        <!-- 1st side-nav bar -->
+        <div class="na" id="na">
+            <ul>
+                <li class="but"><i class='fas fa-home' style=" font-size: 20px;"></i> &nbsp;Home</li>
+                <li class="but"><i class='fas fa-play-circle' style=" font-size: 20px;"></i>&nbsp;Shorts</li>
+                <li class="but">Subscription</li>
+                <hr>
+                <h3>Explore</h3>
+                <li class="but">Trending</li>
+                <li class="but">Shopping</li>
+                <li class="but">Music</li>
+                <li class="but">Film</li>
+                <li class="but">Live</li>
+                <li class="but">Gaming</li>
+                <li class="but">News</li>
+                <li class="but">Sport</li>
+                <li class="but">Learning</li>
+                <li class="but">Fashion & beauty</li>
+                <li class="but">Podcasts</li>
+                <hr>
+                <li class="but">Settings</li>
+                <li class="but">Report History</li>
+                <li class="but">Help</li>
+                <li class="but">Send feedback</li>
+            </ul>
 
         </div>
+        <!-- 2nd side-nav bar -->
+        <div class="na-2" id="na-2">
+            <ul>
+                <!-- home -->
+                <li class="bu"><i class='fas fa-home' style=" font-size: 25px;"></i><span>Home</span></li>
+                <!-- shorts -->
+                <li class="bu"><i class='fas fa-play-circle' style=" font-size: 25px;"></i><span>Shorts</span></li>
+                <!-- Subscription -->
+                <li class="bu">
+                    <i class='far fa-folder' style=" font-size: 25px;"></i>
+                    <i class="fas fa-play" style="position: relative; left: 2px; top: -16px; font-size: 10px; "></i>
+                    <span> Subscription</span>
+                </li>
+                <!-- you -->
+                <li class="bu">
+                    <i class='fas fa-user' style=" font-size: 25px;"></i><span>You</span>
+                </li>
+                <!-- download -->
+                <li class="bu"><i class='fas fa-download' style="bottom: 10px;"></i><span>Download</span></li>
+            </ul>
+        </div>
+    </div>
+   
+     <div class="content">
+        <video src="https://www.youtube.com/live/mTt-WgvVUm4?si=NwaF6aV70D9GtI6G"></video>
     </div>
 
     <script src="youtube.js"></script>
