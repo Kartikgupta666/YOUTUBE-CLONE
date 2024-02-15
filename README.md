@@ -1,1 +1,1 @@
-<b> This is a youtube clone mde by me using MERN stack </b>
+<b> This is a youtube clone made by me using MERN stack </b>
