@@ -108,9 +108,6 @@ nav {
   cursor: pointer;
 }
 
-.side-nav-bar {
-  /* position: fixed; */
-}
 
 .na.active {
   display: none;
