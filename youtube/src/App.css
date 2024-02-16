@@ -109,35 +109,6 @@ nav {
 }
 
 
-.na.active {
-  display: none;
-  position: absolute;
-  transition: 0.3s;
-}
-
-.na-2.deactive {
-  position: absolute;
-  display: block;
-  transition: 0.3s;
-
-}
-
-.na {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 90px;
-
-}
-
-.na ul li {
-  list-style: none;
-}
-
-.na-2 ul li {
-  list-style: none;
-}
-
 /* .na-2.active
 {
   right: 0;

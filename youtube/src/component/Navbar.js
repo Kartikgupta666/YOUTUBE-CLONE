@@ -3,11 +3,12 @@ import React from 'react'
 
 export default function Navbar() {
 
-    function show() {
+    const show = () => {
         document.getElementById('na').classList.toggle('active');
         document.getElementById('na-2').classList.toggle('deactive')
 
     }
+
 
     return (
         <div>
@@ -39,11 +40,35 @@ export default function Navbar() {
                 </nav>
             </div>
             {/* <!-- side-nav bar --> */}
-            <div className="side-nav-bar" id="snv">
+            <div className="side-nav-bar" id="snv" >
                 {/* <!-- 1st side-nav bar --> */}
+                <div className="na" style={{
+                    "display": "flex",
+                    "flex - direction": "column",
+                    "position": "absolute",
+                    "top": "90px"
+                }}>
+                    <ul>
+                        <li>Home</li>
+                        <li>Shorts</li>
+                        <li>Subscription</li>
+                        <hr />
+                        <li>You</li>
+                        <li>History</li>
+                        <hr />
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
 
+                </div>
                 {/* <!-- 2nd side-nav bar --> */}
-                <div className="na-2" id="na-2">
+                <div className="na-2" id="na-2" style={{
+                    "position": "absolute",
+                    "display": "none",
+                    "transition": "0.3s"
+                }}>
                     <ul>
                         {/* <!-- home --> */}
                         <li className="bu"><i className='fas fa-home' style={{ " fontSize": " 25px" }}></i><span>Home</span></li>
@@ -51,9 +76,9 @@ export default function Navbar() {
                         <li className="bu"><i className='fas fa-play-circle' style={{ " fontSize": " 25px" }}></i><span>Shorts</span></li>
                         {/* <!-- Subscription --> */}
                         <li className="bu">
-                            <i className='far fa-folder' style={{ " fontSize": " 25px" }}></i>
+                            {/* <i className='far fa-folder' style={{ " fontSize": " 25px" }}></i> */}
                             <i className="fas fa-play" style={{ "position": "relative", "left": "2px", " top": "-16px", " fontSize": "10px" }}></i>
-                            <span> Subscription</span>
+                            <span> <h5>Subscription</h5></span>
                         </li>
                         {/* <!-- you --> */}
                         <li className="bu">
